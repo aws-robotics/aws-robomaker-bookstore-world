@@ -1,0 +1,124 @@
+# Points throughout the bookstore for navigation. 
+# Compatible with aws_robomaker_simulations_common route_manager node
+mode: random
+poses:
+    - pose: 
+          position: 
+            x: -1.04219532013
+            y: 5.23599052429
+            z: 0.0
+          orientation: 
+            x: 0.0
+            y: 0.0
+            z: -0.573064998815
+            w: 0.819509918874
+    - pose: 
+          position: 
+            x: 1.64250051975
+            y: 1.58413732052
+            z: 0.0
+          orientation: 
+            x: 0.0
+            y: 0.0
+            z: -0.0192202632229
+            w: 0.999815273679
+    - pose: 
+          position: 
+            x: 5.10259008408
+            y: 0.883781552315
+            z: 0.0
+          orientation: 
+            x: 0.0
+            y: 0.0
+            z: -0.455630867938
+            w: 0.890168811059
+    - pose: 
+          position: 
+            x: 6.15312242508
+            y: -6.41992664337
+            z: 0.0
+          orientation: 
+            x: 0.0
+            y: 0.0
+            z: 0.999290790059
+            w: -0.037655237394
+    - pose: 
+          position: 
+            x: 1.73421287537
+            y: -5.13594055176
+            z: 0.0
+          orientation: 
+            x: 0.0
+            y: 0.0
+            z: 0.718415199022
+            w: 0.695614549743
+    - pose: 
+          position: 
+            x: 1.90096473694
+            y: -0.383528530598
+            z: 0.0
+          orientation: 
+            x: 0.0
+            y: 0.0
+            z: 0.999925665299
+            w: 0.0121927796718
+    - pose: 
+          position: 
+            x: -6.31987476349
+            y: -0.933807015419
+            z: 0.0
+          orientation: 
+            x: 0.0
+            y: 0.0
+            z: 0.887631464831
+            w: -0.460554429619
+    - pose: 
+          position: 
+            x: -3.83528089523
+            y: -5.31936645508
+            z: 0.0
+          orientation: 
+            x: 0.0
+            y: 0.0
+            z: 0.701646950739
+            w: 0.712524776073
+    - pose: 
+          position: 
+            x: -7.33705806732
+            y: -5.41941690445
+            z: 0.0
+          orientation: 
+            x: 0.0
+            y: 0.0
+            z: 0.711253988913
+            w: 0.702935106006
+    - pose: 
+          position: 
+            x: -3.40172624588
+            y: 2.21779298782
+            z: 0.0
+          orientation: 
+            x: 0.0
+            y: 0.0
+            z: -0.0089276862832
+            w: 0.999960147415
+    - pose: 
+          position: 
+            x: -6.80345344543
+            y: 5.45276832581
+            z: 0.0
+          orientation: 
+            x: 0.0
+            y: 0.0
+            z: 0.691578597584
+            w: 0.722301213736
+    - pose: 
+          position: 
+            x: -3.35170054436
+            y: 5.78627061844
+            z: 0.0
+          orientation: 
+            x: 0.0
+            y: 0.0
+            z: -0.0227095030437
+            w: 0.999742105981

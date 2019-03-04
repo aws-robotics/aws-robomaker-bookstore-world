@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="aws_robomaker_retail_BookE_01">
+    <link name="link">
+      <inertial>
+        <mass>1</mass>
+        <inertia>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+          <ixx>0.0666</ixx>
+          <iyy>0.0346</iyy>
+          <izz>0.0986</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>file://models/aws_robomaker_retail_BookE_01/meshes/aws_BookE_01_collision.DAE</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+	    <geometry>
+          <mesh>
+            <uri>file://models/aws_robomaker_retail_BookE_01/meshes/aws_BookE_01_visual.DAE</uri>
+          </mesh>
+        </geometry>
+        <meta>
+          <layer>1</layer>
+        </meta>
+      </visual>
+    </link>
+    <!-- Keeping this book model static to keep the 
+         scene composition until physics is stabilized-->
+    <static>1</static>
+  </model>
+</sdf>

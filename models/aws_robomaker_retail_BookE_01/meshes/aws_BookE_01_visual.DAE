@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-11-06T03:28:44Z</created><keywords></keywords><modified>2018-11-06T03:28:44Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
+  <library_images>
+    <image id="Map #8-image" name="Map #8"><init_from>../materials/textures/aws_BookE_01.png</init_from></image>
+    <image id="Map #9-image" name="Map #9"><init_from>../materials/textures/aws_BookE_02.png</init_from></image>
+  </library_images>
+  <library_materials>
+    <material id="Material #50" name="Material #50">
+      <instance_effect url="#Material #50-fx"/>
+    </material>
+    <material id="Material #51" name="Material #51">
+      <instance_effect url="#Material #51-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Material #50-fx" name="Material #50">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #8-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material #51-fx" name="Material #51">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #9-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="aws_BookE_01_visual-lib" name="aws_BookE_01_visualMesh">
+      <mesh>
+        <source id="aws_BookE_01_visual-POSITION">
+          <float_array id="aws_BookE_01_visual-POSITION-array" count="24">
+-10.821584 -14.554717 -2.267400
+10.821584 -14.554717 -2.267400
+-10.821584 14.554717 -2.267400
+10.821584 14.554717 -2.267400
+-10.821584 -14.554717 2.267400
+10.821584 -14.554717 2.267400
+-10.821584 14.554717 2.267400
+10.821584 14.554717 2.267400
+</float_array>
+          <technique_common>
+            <accessor source="#aws_BookE_01_visual-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_BookE_01_visual-Normal0">
+          <float_array id="aws_BookE_01_visual-Normal0-array" count="72">
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#aws_BookE_01_visual-Normal0-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_BookE_01_visual-UV0">
+          <float_array id="aws_BookE_01_visual-UV0-array" count="40">
+0.547451 0.998597
+0.547451 0.003754
+0.999096 0.003754
+0.999096 0.998597
+0.452819 0.998597
+0.001173 0.998596
+0.001173 0.003754
+0.452819 0.003754
+0.022899 0.327117
+0.668886 0.327117
+0.668886 0.490298
+0.022899 0.490298
+0.668886 0.320910
+0.022899 0.320910
+0.022899 0.157729
+0.668886 0.157729
+0.906992 0.929233
+0.011495 0.929233
+0.011495 0.555163
+0.906992 0.555163
+</float_array>
+          <technique_common>
+            <accessor source="#aws_BookE_01_visual-UV0-array" count="20" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="aws_BookE_01_visual-VERTEX">
+          <input semantic="POSITION" source="#aws_BookE_01_visual-POSITION"/>
+        </vertices>
+        <polylist count="3" material="Material #50"><input semantic="VERTEX" offset="0" source="#aws_BookE_01_visual-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_BookE_01_visual-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_BookE_01_visual-UV0"/><vcount>4 4 4 </vcount><p> 0 0 0 2 1 1 3 2 2 1 3 3 4 4 4 5 5 5 7 6 6 6 7 7 2 20 1 0 21 0 4 22 4 6 23 7</p></polylist>
+        <polylist count="3" material="Material #51"><input semantic="VERTEX" offset="0" source="#aws_BookE_01_visual-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_BookE_01_visual-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_BookE_01_visual-UV0"/><vcount>4 4 4 </vcount><p> 0 8 8 1 9 9 5 10 10 4 11 11 1 12 16 3 13 17 7 14 18 5 15 19 3 16 12 2 17 13 6 18 14 7 19 15</p></polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="aws_BookE_01_visual" name="aws_BookE_01_visual">
+      <node name="aws_BookE_01_visual" id="aws_BookE_01_visual" sid="aws_BookE_01_visual"><matrix sid="matrix">0.783946 0.000000 0.000000 0.000000 0.000000 -0.783946 0.000000 0.000000 0.000000 -0.000000 -0.783946 0.009518 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#aws_BookE_01_visual-lib"><bind_material><technique_common><instance_material symbol="Material #50" target="#Material #50"/><instance_material symbol="Material #51" target="#Material #51"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#aws_BookE_01_visual"></instance_visual_scene>
+  </scene>
+</COLLADA>

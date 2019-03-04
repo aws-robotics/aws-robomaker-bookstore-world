@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-10-11T08:57:21Z</created><keywords></keywords><modified>2018-10-11T08:57:21Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Z_UP</up_axis></asset>
+  <library_geometries>
+    <geometry id="aws_Bicycle_01_collision-lib" name="aws_Bicycle_01_collisionMesh">
+      <mesh>
+        <source id="aws_Bicycle_01_collision-POSITION">
+          <float_array id="aws_Bicycle_01_collision-POSITION-array" count="54">
+-11.232944 -3.964877 0.000000
+7.225372 -4.991541 -0.000432
+-11.232944 5.015439 0.000000
+7.225372 6.042103 -0.000432
+-10.087155 -0.240278 4.754985
+4.531487 -2.258663 12.578091
+-10.087155 1.290840 4.754985
+4.531487 3.309225 12.578091
+-2.400103 -1.231510 10.890374
+-2.400103 2.282072 10.890374
+0.198834 1.730756 -0.000268
+0.198834 -0.680194 -0.000268
+8.832857 1.175694 6.246763
+8.832857 -0.125132 6.246763
+-1.091943 -1.203673 5.408632
+-10.663881 -0.964242 2.361590
+-10.663881 2.014804 2.361590
+-1.091943 2.254235 5.408632
+</float_array>
+          <technique_common>
+            <accessor source="#aws_Bicycle_01_collision-POSITION-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_Bicycle_01_collision-Normal0">
+          <float_array id="aws_Bicycle_01_collision-Normal0-array" count="192">
+-0.000023 0.000000 -1.000000
+-0.000023 0.000000 -1.000000
+-0.000023 0.000000 -1.000000
+-0.000023 0.000000 -1.000000
+-0.425339 0.000000 0.905034
+-0.425339 0.000000 0.905034
+-0.623811 0.000000 0.781575
+-0.623811 0.000000 0.781575
+-0.069399 -0.939813 0.334568
+-0.044166 -0.990498 0.130246
+0.019035 -0.973250 0.228958
+0.092188 -0.946191 0.310199
+0.968453 0.000000 -0.249196
+0.991457 0.000000 0.130434
+0.991457 0.000000 0.130434
+0.968453 0.000000 -0.249196
+-0.069399 0.939813 0.334568
+-0.044166 0.990498 0.130246
+-0.095023 0.988689 0.116038
+-0.192213 0.917876 0.347213
+-0.972174 0.000000 0.234261
+-0.972174 0.000000 0.234261
+-0.972174 0.000000 0.234261
+-0.972174 0.000000 0.234261
+-0.000023 0.000000 -1.000000
+-0.000023 0.000000 -1.000000
+-0.000023 0.000000 -1.000000
+-0.000023 0.000000 -1.000000
+-0.236570 0.000000 0.971614
+-0.236570 0.000000 0.971614
+-0.425339 0.000000 0.905034
+-0.425339 0.000000 0.905034
+-0.069399 -0.939813 0.334568
+-0.192213 -0.917876 0.347213
+-0.095023 -0.988689 0.116038
+-0.044166 -0.990498 0.130246
+-0.069399 0.939813 0.334568
+0.092188 0.946191 0.310199
+0.019035 0.973250 0.228958
+-0.044166 0.990498 0.130246
+-0.044166 -0.990498 0.130246
+-0.030723 -0.997380 -0.065494
+-0.111719 -0.990737 0.077200
+0.019035 -0.973250 0.228958
+0.827165 0.000000 0.561959
+0.827165 0.000000 0.561959
+0.991457 0.000000 0.130434
+0.991457 0.000000 0.130434
+-0.044166 0.990498 0.130246
+-0.030723 0.997380 -0.065494
+0.028030 0.985557 -0.167011
+-0.095023 0.988689 0.116038
+-0.972174 0.000000 0.234261
+-0.972174 0.000000 0.234261
+-0.972174 0.000000 0.234261
+-0.972174 0.000000 0.234261
+0.028030 -0.985557 -0.167011
+-0.030723 -0.997380 -0.065494
+-0.044166 -0.990498 0.130246
+-0.095023 -0.988689 0.116038
+-0.111719 0.990737 0.077200
+-0.030723 0.997380 -0.065494
+-0.044166 0.990498 0.130246
+0.019035 0.973250 0.228958
+</float_array>
+          <technique_common>
+            <accessor source="#aws_Bicycle_01_collision-Normal0-array" count="64" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aws_Bicycle_01_collision-UV0">
+          <float_array id="aws_Bicycle_01_collision-UV0-array" count="84">
+1.000000 0.000000
+0.000000 0.000000
+1.000000 1.000000
+0.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.619329 0.000000
+0.619329 1.000000
+0.619329 1.000000
+0.380671 1.000000
+0.380671 1.000000
+0.380671 0.000000
+0.380671 0.000000
+0.619329 0.000000
+1.000000 0.496656
+0.000000 0.496656
+1.000000 0.496656
+0.000000 0.496656
+0.619329 0.496656
+0.000000 0.496656
+1.000000 0.496656
+1.000000 0.496656
+0.000000 0.496656
+0.380671 0.496656
+</float_array>
+          <technique_common>
+            <accessor source="#aws_Bicycle_01_collision-UV0-array" count="42" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="aws_Bicycle_01_collision-VERTEX">
+          <input semantic="POSITION" source="#aws_Bicycle_01_collision-POSITION"/>
+        </vertices>
+        <polylist count="16"><input semantic="VERTEX" offset="0" source="#aws_Bicycle_01_collision-VERTEX"/><input semantic="NORMAL" offset="1" source="#aws_Bicycle_01_collision-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#aws_Bicycle_01_collision-UV0"/><vcount>4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount><p> 2 0 2 10 1 28 11 2 30 0 3 0 8 4 24 9 5 26 6 6 6 4 7 4 11 8 31 14 9 36 15 10 37 0 11 8 3 12 13 12 13 32 13 14 35 1 15 12 10 16 29 17 17 41 12 18 33 3 19 16 0 20 21 15 21 38 16 22 40 2 23 20 3 24 3 1 25 1 11 26 30 10 27 28 5 28 5 7 29 7 9 30 26 8 31 24 11 32 31 1 33 9 13 34 34 14 35 36 10 36 29 2 37 17 16 38 39 17 39 41 14 40 36 8 41 25 4 42 10 15 43 37 7 44 15 5 45 14 13 46 35 12 47 32 17 48 41 9 49 27 7 50 18 12 51 33 4 52 23 6 53 22 16 54 40 15 55 38 5 56 11 8 57 25 14 58 36 13 59 34 6 60 19 9 61 27 17 62 41 16 63 39</p></polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="aws_Bicycle_01_collision" name="aws_Bicycle_01_collision">
+      <node name="aws_Bicycle_01_collision" id="aws_Bicycle_01_collision" sid="aws_Bicycle_01_collision"><matrix sid="matrix">1.000000 0.000000 0.000000 1.421171 0.000000 1.000000 0.000000 -0.647047 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#aws_Bicycle_01_collision-lib"/><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#aws_Bicycle_01_collision"></instance_visual_scene>
+  </scene>
+</COLLADA>
