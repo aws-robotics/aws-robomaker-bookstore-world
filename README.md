@@ -36,30 +36,16 @@ source install/setup.sh
 roslaunch aws_robomaker_bookstore_world bookstore.world
 ```
 
-# Robot simulation
-With Turtlebot Burger initially positioned near the service desk: 
-```
-export TURTLEBOT3_MODEL=waffle_pi
-export ROBOT_INITIAL_POSE="-x 0.5 -y 1.0 -z 0.0 -R 0.0 -P 0.0 -Y 0.0"
-roslaunch turtlebot_gazebo turtlebot_world.launch  world_file:=`pwd`/worlds/bookstore.world
-```
+# Building
+Include this as a .rosinstall dependency in your SampleApplication simulation workspace. `colcon build` will build this repository.
 
-# Navigation
-A SLAM-generated map for *Turtlebot Waffle PI* is included.
+To build it outside an application, note there is no robot workspace. It is a simulation workspace only.
 
-Run:
 ```bash
-roslaunch aws_robomaker_bookstore_world bookstore_turtlebot_navigation.launch 
+$ rosws update
+$ rosdep install --from-paths . --ignore-src -r -y
+$ colcon build
 ```
 
-Run with rviz:
-```bash
-roslaunch aws_robomaker_bookstore_world bookstore_turtlebot_navigation.launch open_rviz:=true
-```
-
-Run RViz separately:
-```
-rviz -d rviz/turtlebot3_navigation.rviz
-```
-
-![NavPath](docs/images/nav_path_rviz_gazebo.png)
+# Robot Simulation - Initial Position
+A reasonable initial position would be near the service desk at (0.5,1.0,0.0).
