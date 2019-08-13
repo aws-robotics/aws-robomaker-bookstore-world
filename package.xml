@@ -12,6 +12,9 @@
   <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>gazebo</exec_depend>
   <exec_depend>gazebo_plugins</exec_depend>
+  <depend>turtlebot3_description</depend>
+  <depend>turtlebot3_navigation</depend>
+  <depend>turtlebot3_gazebo</depend>
 
   <!-- SLAM -->
   <!--
