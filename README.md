@@ -33,7 +33,7 @@ colcon build
 
 # run in ROS
 source install/setup.sh
-roslaunch aws_robomaker_bookstore_world bookstore.world
+roslaunch aws_robomaker_bookstore_world bookstore.launch
 ```
 
 # Building
