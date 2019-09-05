@@ -1,20 +1,19 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(aws_robomaker_bookstore_world)
 
-find_package(catkin REQUIRED COMPONENTS
-  gazebo_ros
-  turtlebot3_description    
-  turtlebot3_navigation  # required for copy of .rviz file
+# Add support for C++14
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+
+find_package(ament_cmake REQUIRED)
+find_package(gazebo_ros REQUIRED)
+
+install(DIRECTORY launch maps models routes worlds
+  DESTINATION share/${PROJECT_NAME}
 )
 
-catkin_package()
+ament_export_dependencies(ament_cmake)
+ament_export_dependencies(gazebo_ros)
 
-install(DIRECTORY launch models worlds maps routes
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-
-# Copy the rviz model for easier access in RoboMaker RViz 
-install(FILES ${turtlebot3_navigation_DIR}/../rviz/turtlebot3_navigation.rviz
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/rviz
-  RENAME turtlebot3_navigation.rviz
-)
+ament_package()

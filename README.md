@@ -11,12 +11,13 @@
 - git: {local-name: src/aws-robomaker-bookstore-world, uri: 'https://github.com/aws-robotics/aws-robomaker-bookstore-world.git', version: master}
 ```
 * Add the following to your launch file:
-```xml
-<launch>
-  <!-- Launch World -->
-  <include file="$(find aws_robomaker_bookstore_world)/launch/bookstore.launch"/>
-  ...
-</launch>
+```python
+launch.actions.IncludeLaunchDescription(
+    launch.launch_description_sources.PythonLaunchDescriptionSource(
+        [get_package_share_directory(
+            'aws_robomaker_bookstore_world'), '/launch/bookstore.launch.py']
+    )
+)
 ```
 
 # Load directly into Gazebo (without ROS)
@@ -28,12 +29,13 @@ gazebo worlds/bookstore.world
 # ROS Launch with Gazebo viewer (without a robot)
 ```bash
 # build for ROS
+rosdep update
 rosdep install --from-paths . --ignore-src -r -y
 colcon build
 
 # run in ROS
 source install/setup.sh
-roslaunch aws_robomaker_bookstore_world bookstore.launch
+ros2 launch aws_robomaker_bookstore_world bookstore.launch.py gui:=true
 ```
 
 # Building
@@ -42,9 +44,8 @@ Include this as a .rosinstall dependency in your SampleApplication simulation wo
 To build it outside an application, note there is no robot workspace. It is a simulation workspace only.
 
 ```bash
-$ rosws update
-$ rosdep install --from-paths . --ignore-src -r -y
-$ colcon build
+rosdep install --from-paths . --ignore-src -r -y
+colcon build
 ```
 
 # Robot Simulation - Initial Position
