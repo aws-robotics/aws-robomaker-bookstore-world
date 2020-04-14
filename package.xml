@@ -9,11 +9,13 @@
   <author email="ros-contributions@amazon.com">AWS RoboMaker</author>
   <maintainer email="ros-contributions@amazon.com">AWS RoboMaker</maintainer>
   <buildtool_depend>catkin</buildtool_depend>
-  <exec_depend>gazebo_ros</exec_depend>
+
+  <depend>gazebo_ros</depend>
+  <depend>turtlebot3_description</depend>
+  <depend>turtlebot3_navigation</depend>
+
   <exec_depend>gazebo</exec_depend>
   <exec_depend>gazebo_plugins</exec_depend>
-  <exec_depend>turtlebot3_description</exec_depend>
-  <exec_depend>turtlebot3_navigation</exec_depend>
   <exec_depend>turtlebot3_gazebo</exec_depend>
 
   <!-- SLAM -->
