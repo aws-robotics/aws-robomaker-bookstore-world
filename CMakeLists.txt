@@ -3,7 +3,6 @@ project(aws_robomaker_bookstore_world)
 
 find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
-  turtlebot3_description    
   turtlebot3_navigation  # required for copy of .rviz file
 )
 
