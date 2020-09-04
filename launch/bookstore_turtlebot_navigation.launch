@@ -1,6 +1,4 @@
-<launch>
-  <!-- Turtlebot robot model -->
-  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>                                                                                
+<launch>                                                                        
   <!-- 
       Only allow users to set (x,y,yaw), otherwise initial 
       2D pose estimates will be wrong 
