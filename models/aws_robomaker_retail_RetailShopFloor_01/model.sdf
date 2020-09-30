@@ -4,7 +4,15 @@
     <link name="link">
       <inertial>
         <mass>100</mass>
-      </inertial>
+	<inertia>
+	    <ixx>  1.6265617095e+01 </ixx>
+	    <ixy> -5.4403352331e-09 </ixy>
+	    <ixz> -3.7057474323e+00 </ixz>
+	    <iyy>  3.4732484662e+01 </iyy>
+	    <iyz>  8.5434574246e-10 </iyz>
+	    <izz>  1.8480886104e+01 </izz>
+	  </inertia>
+	</inertial>
       <collision name="collision">
         <geometry>
           <mesh>
