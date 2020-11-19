@@ -12,14 +12,6 @@
   <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>gazebo</exec_depend>
   <exec_depend>gazebo_plugins</exec_depend>
-  <!-- For AMCL and move_base -->
-  <exec_depend>turtlebot3_navigation</exec_depend>
-
-  <!-- SLAM -->
-  <!--
-  <exec_depend>turtlebot3_slam</exec_depend>
-  <exec_depend>hector_mapping</exec_depend>
-  -->
 
   <export>
     <gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" gazebo_model_path="${prefix}/models"/>
