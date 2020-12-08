@@ -9,7 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(gazebo_ros REQUIRED)
 
-install(DIRECTORY launch maps models routes worlds
+install(DIRECTORY launch maps models routes param worlds
   DESTINATION share/${PROJECT_NAME}
 )
 
