@@ -1,6 +1,6 @@
 # Points throughout the bookstore for navigation. 
 # Compatible with aws_robomaker_simulations_common route_manager node
-mode: random
+mode: inorder
 poses:
     - pose: 
           position: 
