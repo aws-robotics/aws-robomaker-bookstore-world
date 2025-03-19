@@ -1,39 +1,30 @@
 import os
-import sys
 
 import launch
-from launch.conditions import IfCondition
-from launch.substitutions import PythonExpression
 from ament_index_python.packages import get_package_share_directory
+from launch.actions import ExecuteProcess, SetEnvironmentVariable
 
 
 def generate_launch_description():
     world_file_name = "bookstore.world"
-    world = os.path.join(get_package_share_directory('aws_robomaker_bookstore_world'), 'worlds', world_file_name)
+    package_dir = get_package_share_directory('aws_robomaker_bookstore_world')
+    world = os.path.join(package_dir, 'worlds', world_file_name)
 
-    gazebo_ros = get_package_share_directory('gazebo_ros')
-    gazebo_client = launch.actions.IncludeLaunchDescription(
-	launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(gazebo_ros, 'launch', 'gzclient.launch.py')),
-        condition=launch.conditions.IfCondition(launch.substitutions.LaunchConfiguration('gui'))
-     )
-    gazebo_server = launch.actions.IncludeLaunchDescription(
-        launch.launch_description_sources.PythonLaunchDescriptionSource(
-            os.path.join(gazebo_ros, 'launch', 'gzserver.launch.py'))
-    )
+    model_path = os.path.join(package_dir, 'models')
 
+    gazebo_server_cmd_line = [
+        'gz', 'sim', '-r', '-v4', world]
+
+    gazebo = ExecuteProcess(
+        cmd=gazebo_server_cmd_line, output='screen')
 
     ld = launch.LaunchDescription([
+        SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH', model_path),
         launch.actions.DeclareLaunchArgument(
           'world',
           default_value=[world, ''],
           description='SDF world file'),
-        launch.actions.DeclareLaunchArgument(
-            name='gui',
-            default_value='false'
-        ),
-        gazebo_server,
-        gazebo_client
+        gazebo,
     ])
     return ld
 

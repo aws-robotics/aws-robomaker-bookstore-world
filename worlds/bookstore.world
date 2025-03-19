@@ -11,8 +11,8 @@
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type="adiabatic" />
     <physics default="0" name="default_physics" type="ode">
-      <max_step_size>0.001</max_step_size>
-      <real_time_factor>1</real_time_factor>
+      <max_step_size>0.005</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
       <real_time_update_rate>1000</real_time_update_rate>
     </physics>
     <scene>
@@ -29,6 +29,28 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
+
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin
+      filename="gz-sim-imu-system"
+      name="gz::sim::systems::Imu">
+    </plugin>
 
 
 	<model name="AirConditionerC_01_001">
@@ -1026,12 +1048,12 @@
 
 
 
-	<model name="Spotlight_01_001">
+	<!-- <model name="Spotlight_01_001">
         <include>
             <uri>model://aws_robomaker_retail_Spotlight_01</uri>
         </include>
         <pose frame="">1.493200 4.692372 3.302658 0 -0 0</pose>
-	</model>
+	</model> -->
 
 	<model name="ShopWindow_01_001">
         <include>
